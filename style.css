@@ -18,9 +18,16 @@ img {
   display: block;
   max-width: 100%;
 }
+
+h1, h2, h3, p {
+  margin: 0px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto 100px auto;
+}
 header {
-  max-width: 600px;
-  margin: 20px auto;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 20px;
@@ -33,21 +40,21 @@ header {
   align-items: center;
 }
 
-.header li{
+.header li {
   display: block;
   padding: 10px 20px;
 }
 .header li a {
   position: relative;
 }
-.header li a::after{
+.header li a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -2px;
   height: 2px;
   width: 0;
-  background-color: #000; 
+  background-color: #000;
   border-radius: 8px;
   transition: width 0.3s ease;
   display: block;
@@ -55,4 +62,36 @@ header {
 
 .header a:hover::after {
   width: 100%;
+}
+.perfil {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 30px;
+}
+.perfil img {
+  border-radius: 50%;
+  max-width: 250px;
+}
+.perfil h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.perfil p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+.formacao h2 {
+  font-size: 2.5rem;
+}
+.formacao-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.formacao-conhecimentos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/-1;
 }
