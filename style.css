@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0px;
   font-family: "Poppins", sans-serif;
@@ -26,7 +29,14 @@ h1, h2, h3, p {
 .container {
   max-width: 800px;
   margin: 50px auto 100px auto;
+  padding: 0 20px;
 }
+.sub-title {
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+}
+
+/* Header */
 header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -39,7 +49,6 @@ header {
   gap: 20px;
   align-items: center;
 }
-
 .header li {
   display: block;
   padding: 10px 20px;
@@ -59,10 +68,11 @@ header {
   transition: width 0.3s ease;
   display: block;
 }
-
 .header a:hover::after {
   width: 100%;
 }
+
+/* Section perfil */
 .perfil {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -82,9 +92,8 @@ header {
   font-size: 1.2rem;
   line-height: 1.2;
 }
-.formacao h2 {
-  font-size: 2.5rem;
-}
+
+/* Section formação */
 .formacao-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -95,3 +104,25 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-column: 1/-1;
 }
+
+/* Section portifólio */
+.portifolio-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+.portifolio-content li {
+  background-color: #fcfcfc;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: ease .3s;
+  cursor: pointer;
+}
+.portifolio-content li:hover {
+  scale: 1.1;
+}
+.portifolio-content h3,
+.portifolio-content p {
+  padding: 5px 10px;
+}
+
