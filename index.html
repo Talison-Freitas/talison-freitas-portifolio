@@ -30,7 +30,7 @@
       <p>Me chamo Talison de Freitas e sou estudante de Análise e Desenvolvimento de Sistemas. Atualmente, estou estagiando na empresa XCL Digital e trabalho principalmente com o CRM Salesforce. Sou apaixonado por tecnologia, café e, no meu tempo livre, meu hobby favorito é jogar videogame.</p>
     </div>
   </section>
-  <section class="container formacao" id="formacao">
+  <section class="container" id="formacao">
     <h2 class="sub-title">Formação</h2>
     <div class="formacao-content">
       <div>
@@ -62,33 +62,51 @@
       </div>
     </div>
   </section>
-    <section class="container portifolio" id="portifolio">
+  <section class="container" id="portifolio">
     <h2 class="sub-title">Portifólio</h2>
     <div>
- <ul class="portifolio-content">
-  <li>
-    <img src="./imagens/to-do-list.png" alt="Projeto de uma to-do list">
-    <h3>To-do List</h3>
-    <p>Projeto desenvolvido com o objetivo de praticar operações básicas de manipulação de dados (CRUD).</p>
-  </li>
-  <li>
-    <img src="./imagens/projeto-clima.png" alt="Projeto que apresenta o clima de diversos lugares">
-    <h3>Clima</h3>
-    <p>Projeto desenvolvido em TypeScript com o objetivo de treinar a linguagem e o consumo de APIs.</p>
-  </li>
-  <li>
-    <img src="./imagens/projeto-mary-buffet.png" alt="Projeto para um buffet">
-    <h3>Mary Buffet</h3>
-    <p>Projeto criado para um buffet local, com foco em praticar HTML, CSS e JavaScript.</p>
-  </li>
-  <li>
-    <img src="./imagens/projeto-animais-fantasticos.png" alt="Projeto apresentando animais e suas características">
-    <h3>Animais Fantásticos</h3>
-    <p>Projeto desenvolvido durante um curso de JavaScript, com diversas melhorias implementadas além do escopo original.</p>
-  </li>
-</ul>
+      <ul class="portifolio-content">
+        <li>
+          <img src="./imagens/to-do-list.png" alt="Projeto de uma to-do list">
+          <h3>To-do List</h3>
+          <p>Projeto desenvolvido com o objetivo de praticar operações básicas de manipulação de dados (CRUD).</p>
+        </li>
+        <li>
+          <img src="./imagens/projeto-clima.png" alt="Projeto que apresenta o clima de diversos lugares">
+          <h3>Clima</h3>
+          <p>Projeto desenvolvido em TypeScript com o objetivo de treinar a linguagem e o consumo de APIs.</p>
+        </li>
+        <li>
+          <img src="./imagens/projeto-mary-buffet.png" alt="Projeto para um buffet">
+          <h3>Mary Buffet</h3>
+          <p>Projeto criado para um buffet local, com foco em praticar HTML, CSS e JavaScript.</p>
+        </li>
+        <li>
+          <img src="./imagens/projeto-animais-fantasticos.png" alt="Projeto apresentando animais e suas características">
+          <h3>Animais Fantásticos</h3>
+          <p>Projeto desenvolvido durante um curso de JavaScript, com diversas melhorias implementadas além do escopo original.</p>
+        </li>
+      </ul>
 
     </div>
+  </section>
+  <section class="container" id="contato">
+    <h2 class="sub-title">Contato</h2>
+    <form>
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div class="textarea">
+        <label for="mensagem">Mensagem</label>
+        <textarea  name="mensagem" id="mensagem"></textarea>
+      </div>
+      <button class="botao">Enviar</button>
+    </form>
   </section>
   <script src="./script.js"></script>
 </body>
